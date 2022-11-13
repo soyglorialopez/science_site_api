@@ -1,0 +1,6 @@
+boto3
+Django
+django-crontab
+django-environ
+django-storages
+ipython
