@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'documents',
-    'django_crontab'
+    'django_crontab',
+    'django_filters'
 ]
 
 MIDDLEWARE = [
@@ -152,3 +153,9 @@ CRONJOBS = [
     ('* 8 * * 7', 'documents.cron.send_newsletter_job')
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 100
+
+}

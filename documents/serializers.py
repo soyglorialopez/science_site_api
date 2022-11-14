@@ -3,13 +3,13 @@ from .models import File, Category, Suscription
 
 
 class FileSerializer(serializers.ModelSerializer):
+
   class Meta: 
     ordering = ['-id']
     model = File
     fields = ('id', 'title', 'user_name', 'file', 'date', 'like', 'categories')
     extra_kwargs = {'categories': {'required': True}}
     read_only_fields = ['date', 'like']
-
 class CategorySerializer(serializers.ModelSerializer):
   files = FileSerializer(many=True, read_only=True)
   class Meta: 

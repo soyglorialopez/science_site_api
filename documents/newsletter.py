@@ -9,7 +9,7 @@ def send_email():
   end_date = datetime.now()
   recipients = [user.email for user in Suscription.objects.all()]
 
-  # Body for email
+  # Body for the email
   files = File.objects.filter(date__range=(start_date, end_date))
   pub_urls = [f'http://127.0.0.1:8000/files/{file.id}' for file in files]
   pub_urls_to_string =  "\n".join([item for item in pub_urls])

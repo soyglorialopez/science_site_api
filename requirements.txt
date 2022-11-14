@@ -1,6 +1,8 @@
 boto3
 Django
+djangorestframework
 django-crontab
 django-environ
 django-storages
+django-filter
 ipython

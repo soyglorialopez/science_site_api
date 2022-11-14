@@ -14,7 +14,7 @@ class File(models.Model):
   title = models.CharField(max_length=200)
   user_name = models.CharField(max_length=100)
   file = models.FileField()
-  date = models.DateTimeField(auto_now_add=True)
+  date = models.DateField(auto_now_add=True)
   like = models.IntegerField(default=0)
   categories = models.ManyToManyField('Category', related_name="files", blank=True)
 
