@@ -35,7 +35,7 @@ We need to add the cron job in our system
 python manage.py crontab add
 ```
 
-### Endpoinst
+### Endpoints
 
 | Endpoint                 | Method                   | Result                                                            |
 | ------------------------ | ------------------------ | ----------------------------------------------------------------- |
