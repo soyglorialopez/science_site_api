@@ -5,7 +5,7 @@ In this project I have created an API for site of science, in which, users can u
 * The files will be stored in a bucket in Amazon S3
 * Emails sending is scheduled with cron
 
-### Starting
+### Getting Started
 
 Follow the steps below to have the project in local
 
