@@ -50,7 +50,7 @@ python manage.py crontab add
 
 ### Test the API
 
-For test the API it can use the Http client [Postman](https://www.postman.com/)  or in your vscode the extension named [Thunder](https://www.thunderclient.com/)
+For test the API, it can use the Http client [Postman](https://www.postman.com/)  or in your vscode the extension named [Thunder](https://www.thunderclient.com/)
 
 Create a new publication
 
